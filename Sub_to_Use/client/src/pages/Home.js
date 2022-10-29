@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 const Home = () => {
 
-    return(
-        <div>
-            <h1>
-                Hello World
-            </h1>
-        </div>
+    return (
+        <>
+            <Header />
+            <Link className='' to='/Ingredients'>
+                Enter Ingredients + Supplies
+            </Link>
+            <Link className='' to='/RecipeList'>
+                My Saved Recipes
+            </Link>
+        </>
     )
 };
+<button>
+
+</button>
 
 export default Home;
