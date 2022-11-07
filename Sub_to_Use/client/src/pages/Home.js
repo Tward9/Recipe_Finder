@@ -7,17 +7,14 @@ const Home = () => {
     return (
         <>
             <Header />
-            <Link className='' to='/Ingredients'>
+            <Link className='' to='/ingredients'>
                 Enter Ingredients + Supplies
             </Link>
-            <Link className='' to='/RecipeList'>
+            <Link className='' to='/recipeList'>
                 My Saved Recipes
             </Link>
         </>
     )
 };
-<button>
-
-</button>
 
 export default Home;
