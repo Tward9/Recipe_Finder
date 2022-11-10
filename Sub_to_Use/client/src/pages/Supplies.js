@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 
-const SuppliesList = () => {
-    const [suppliesFormData, setSuppliesFormData] = useState({
-        
-    });
+const SuppliesList = ({suppliesFormData, setSuppliesFormData}) => {
+    
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setSuppliesFormData({ ...suppliesFormData, [name]: value });

@@ -2,18 +2,13 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import Header from "../components/Header";
 
-const IngredientEntry = () => {
+const IngredientEntry = ({ingredientFormData, setIngredientFormData}) => {
     let navigate = useNavigate();
 
     const ingredientOne = '';
     const ingredientTwo = '';
     const ingredientThree = '';
-
-    const [ingredientFormData, setIngredientFormData] = useState({
-        ingredientOne: '',
-        ingredientTwo: '',
-        ingredientThree: '',
-    });
+    
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setIngredientFormData({ ...ingredientFormData, [name]: value });

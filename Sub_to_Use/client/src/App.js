@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { useState } from 'react';
 
 //pages
 import Title from './pages/Title';
@@ -13,15 +14,23 @@ import SuppliesList from './pages/Supplies';
 import Header from './components/Header';
 
 function App() {
+  const [ingredientFormData, setIngredientFormData] = useState({
+    ingredientOne: '',
+    ingredientTwo: '',
+    ingredientThree: '',
+  });
+  const [suppliesFormData, setSuppliesFormData] = useState({
+        
+  });
   return (
     <Router>
       <div>
         <Routes>
           <Route path='/' element={<Title />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/ingredients' element={<IngredientEntry />} />
+          <Route path='/ingredients' element={<IngredientEntry ingredientFormData={ingredientFormData} setIngredientFormData={setIngredientFormData} />} />
           <Route path='/recipeList' element={<RecipeList />} />
-          <Route path='/supplies' element={<SuppliesList />} />
+          <Route path='/supplies' element={<SuppliesList suppliesFormData={suppliesFormData} setSuppliesFormData={setSuppliesFormData} />} />
         </Routes>
       </div>
     </Router>
