@@ -14,14 +14,16 @@ import SuppliesList from './pages/Supplies';
 import Header from './components/Header';
 
 function App() {
+  let supplies = new Array(5);
   const [ingredientFormData, setIngredientFormData] = useState({
     ingredientOne: '',
     ingredientTwo: '',
     ingredientThree: '',
   });
-  const [suppliesFormData, setSuppliesFormData] = useState({
-        
-  });
+  const [checkedSupplies, setCheckedSupplies] = useState(
+    new Array(supplies.length).fill(false)
+  );
+
   return (
     <Router>
       <div>
@@ -30,7 +32,7 @@ function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/ingredients' element={<IngredientEntry ingredientFormData={ingredientFormData} setIngredientFormData={setIngredientFormData} />} />
           <Route path='/recipeList' element={<RecipeList />} />
-          <Route path='/supplies' element={<SuppliesList suppliesFormData={suppliesFormData} setSuppliesFormData={setSuppliesFormData} />} />
+          <Route path='/supplies' element={<SuppliesList checkedSupplies={checkedSupplies} setCheckedSupplies={setCheckedSupplies} />} />
         </Routes>
       </div>
     </Router>
