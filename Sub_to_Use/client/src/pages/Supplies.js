@@ -40,6 +40,42 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
                                 onChange={handleInputChange}
                             />
                         </label>
+                        <label>Muffin Tin
+                            <input
+                                type="checkbox"
+                                id="supplies"
+                                value='Muffin Tin'
+                                name="tool"
+                                onChange={handleInputChange}
+                            />
+                        </label>
+                        <label>Food Processor
+                            <input
+                                type="checkbox"
+                                id="supplies"
+                                value='Food Processor'
+                                name="tool"
+                                onChange={handleInputChange}
+                            />
+                        </label>
+                        <label>Loaf Pan
+                            <input
+                                type="checkbox"
+                                id="supplies"
+                                value='Loaf Pan'
+                                name="tool"
+                                onChange={handleInputChange}
+                            />
+                        </label>
+                        <label>Pie Pan
+                            <input
+                                type="checkbox"
+                                id="supplies"
+                                value='Pie Pan'
+                                name="tool"
+                                onChange={handleInputChange}
+                            />
+                        </label>
                     </form>
                 </div>
             </div>
