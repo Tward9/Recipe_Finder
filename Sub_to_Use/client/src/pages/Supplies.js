@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
 
 const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
-
-    // const handleInputChange = (event) => {
-    //     const { name, value } = event.target;
-    //     setSuppliesFormData({ ...suppliesFormData, [name]: value });
-    // };
+    let navigate = useNavigate();
     const handleInputChange = (position) => {
         const updatedCheckedSupplies = checkedSupplies.map((item, index) =>
             index === position ? !item : item
         );
         setCheckedSupplies(updatedCheckedSupplies);
+    }
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        navigate('/recipeList')
     }
     return (
         <>
@@ -21,7 +22,7 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
                     <h2>What Supplies do you want to use?</h2>
                 </div>
                 <div>
-                    <form>
+                    <form onSubmit={handleFormSubmit}>
                         <label>Hand Mixer
                             <input
                                 type="checkbox"
@@ -76,6 +77,7 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
                                 onChange={handleInputChange}
                             />
                         </label>
+                        <button type='submit'>&#10145;</button>
                     </form>
                 </div>
             </div>
