@@ -4,10 +4,6 @@ import Header from "../components/Header";
 
 const IngredientEntry = ({ingredientFormData, setIngredientFormData}) => {
     let navigate = useNavigate();
-
-    const ingredientOne = '';
-    const ingredientTwo = '';
-    const ingredientThree = '';
     
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -28,22 +24,25 @@ const IngredientEntry = ({ingredientFormData, setIngredientFormData}) => {
                     <form onSubmit={handleFormSubmit}>
                         <label>One
                             <input
+                                name="ingredientOne"
                                 type="text"
-                                value={ingredientOne}
+                                value={ingredientFormData.ingredientOne}
                                 onChange={handleInputChange}
                             />
                         </label>
                         <label>Two
                             <input
+                                name="ingredientTwo"
                                 type="text"
-                                value={ingredientTwo}
+                                value={ingredientFormData.ingredientTwo}
                                 onChange={handleInputChange}
                             />
                         </label>
                         <label>Three
                             <input
+                                name="ingredientThree"
                                 type="text"
-                                value={ingredientThree}
+                                value={ingredientFormData.ingredientThree}
                                 onChange={handleInputChange}
                             />
                         </label>
