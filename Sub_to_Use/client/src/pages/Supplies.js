@@ -23,60 +23,78 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
                 </div>
                 <div>
                     <form onSubmit={handleFormSubmit}>
-                        <label>Hand Mixer
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Hand Mixer'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
-                        <label>Baking Tray
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Baking Tray'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
-                        <label>Muffin Tin
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Muffin Tin'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
-                        <label>Food Processor
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Food Processor'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
-                        <label>Loaf Pan
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Loaf Pan'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
-                        <label>Pie Pan
-                            <input
-                                type="checkbox"
-                                id="supplies"
-                                value='Pie Pan'
-                                name="tool"
-                                onChange={handleInputChange}
-                            />
-                        </label>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Hand Mixer'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Hand Mixer</span>
+                            </label>
+                        </div>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Baking Tray'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Baking Tray</span>
+                            </label>
+                        </div>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Muffin Tin'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Muffin Tin</span>
+                            </label>
+                        </div>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Food Processor'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Food Processor</span>
+                            </label>
+                        </div>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Loaf Pan'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Loaf Pan</span>
+                            </label>
+                        </div>
+                        <div className="checkBtn">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    id="supplies"
+                                    value='Pie Pan'
+                                    name="tool"
+                                    onChange={handleInputChange}
+                                />
+                                <span>Pie Pan</span>
+                            </label>
+                        </div>
                         <button type='submit'>&#10145;</button>
                     </form>
                 </div>
