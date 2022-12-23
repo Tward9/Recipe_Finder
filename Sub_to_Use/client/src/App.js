@@ -28,9 +28,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Title />} />
           <Route path='/home' element={<Home />} />
-          <Route path='/ingredients' element={<IngredientEntry ingredientFormData={ingredientFormData} setIngredientFormData={setIngredientFormData} />} />
+          <Route path='/ingredients' element={<IngredientEntry ingredientFormData={ingredientFormData} setIngredientFormData={setIngredientFormData} checkedSupplies={checkedSupplies} />} />
           <Route path='/recipeList' element={<RecipeList />} />
-          <Route path='/supplies' element={<SuppliesList checkedSupplies={checkedSupplies} setCheckedSupplies={setCheckedSupplies} />} />
+          <Route path='/supplies' element={<SuppliesList checkedSupplies={checkedSupplies} setCheckedSupplies={setCheckedSupplies} ingredientFormData={ingredientFormData} />} />
         </Routes>
       </div>
     </Router>

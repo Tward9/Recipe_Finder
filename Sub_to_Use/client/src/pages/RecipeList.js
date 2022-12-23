@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/Header";
+import { Link } from "react-router-dom";
 
 const RecipeList = () => {
     
     return (
         <>
-            <Header />
             <div>
-                <h1>Hello Recipe World</h1>
+                <h1>Recipes</h1>
+                <Link to='/ingredients'>Edit Ingredients</Link>
+                <Link to='/supplies'>Edit Supplies</Link>
             </div>
         </>
     )

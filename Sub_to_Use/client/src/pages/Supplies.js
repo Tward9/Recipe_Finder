@@ -12,7 +12,8 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
     }
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        navigate('/recipeList')
+        //search ingredients bassed on ingredients and supplies selected
+        navigate('/recipeList');
     }
     return (
         <>
