@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useState } from 'react';
@@ -11,7 +10,6 @@ import RecipeList from './pages/RecipeList';
 import SuppliesList from './pages/Supplies';
 
 //components
-import Header from './components/Header';
 
 function App() {
   let supplies = new Array(5);
