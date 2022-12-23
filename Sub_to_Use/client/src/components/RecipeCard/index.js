@@ -6,7 +6,6 @@ const RecipeCard = ({ recipes }) => {
         return (
             <>
                 <h3>Sorry, No Recipes Fit that criteria!</h3>
-                <Link to='/ingredients'>Edit Ingredients</Link>
             </>
         )
     }

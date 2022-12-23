@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 
-const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
+const SuppliesList = ({ checkedSupplies, setCheckedSupplies, ingredientFormData }) => {
     let navigate = useNavigate();
     const handleInputChange = (position) => {
         const updatedCheckedSupplies = checkedSupplies.map((item, index) =>
@@ -13,6 +13,7 @@ const SuppliesList = ({ checkedSupplies, setCheckedSupplies }) => {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         //search ingredients bassed on ingredients and supplies selected
+        
         navigate('/recipeList');
     }
     return (
