@@ -5,8 +5,21 @@ const toolSchema = require('./Tool');
 
 const recipeSchema = new Schema(
     {
+        recipeName: {
+            type: String,
+            required: true,
+            trim: true,
+        },
+        recipeImage: {
+            type: String,
+            required: true,
+            trim: true,
+        },
         ingredients: [ingredientSchema],
-        tools: [toolSchema]
+        tools: [toolSchema],
+        recipeRating: {
+            type: Number,
+        }
     }
 )
 const Recipe = model('Recipe', recipeSchema)
