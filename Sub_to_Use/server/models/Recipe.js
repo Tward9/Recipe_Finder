@@ -16,6 +16,7 @@ const recipeSchema = new Schema(
             trim: true,
         },
         ingredients: [ingredientSchema],
+        addIns: [ingredientSchema],
         tools: [toolSchema],
         recipeRating: {
             type: Number,

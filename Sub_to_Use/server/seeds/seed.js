@@ -1,13 +1,15 @@
-const { Recipe, Ingredient } = require('../models');
-const { recipeList, ingredientList } = require('../seeds')
+const { Recipe, Ingredient, toolSchema } = require('../models');
+const { recipeList, ingredientList, toolList } = require('../seeds')
 
 //create ingredients and recipes
 db.once('open', async () => {
     try {
         await Recipe.deleteMany({});
         await Ingredient.deleteMany({});
+        await toolSchema.deleteMany({});
 
-        await Ingredient.create(ingredientList)
+        await Ingredient.create(ingredientList);
+        await toolSchema.create(toolList);
         await Recipe.create(recipeList);
 
     } catch (err) {
