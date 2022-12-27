@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 const ingredientSchema = require('./Ingredient');
 const toolSchema = require('./Tool');
+const instructionSchema = require('./Instructions');
 
 
 const recipeSchema = new Schema(
@@ -18,6 +19,7 @@ const recipeSchema = new Schema(
         ingredients: [ingredientSchema],
         addIns: [ingredientSchema],
         tools: [toolSchema],
+        instructions: [instructionSchema],
         recipeRating: {
             type: Number,
         }

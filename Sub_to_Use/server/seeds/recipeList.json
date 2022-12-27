@@ -1,5 +1,71 @@
 [
     {
-       "recipeName": "Banana Bread" 
+        "recipeName": "Banana Bread",
+        "recipeImage": "placeHolderString",
+        "ingredients": [
+            {
+                "ingredientName": "all-purpose flower",
+                "amount": 2,
+                "unit": "cup"
+            },
+            {
+                "ingredientName": "sugar",
+                "amount": 1,
+                "unit": "/2 cup"
+            },
+            {
+                "ingredientName": "light brown sugar",
+                "amount": 1,
+                "unit": "/4 cup"
+            },
+            {
+                "ingredientName": "baking soda",
+                "amount": 1,
+                "unit": "teaspoon"
+            },
+            {
+                "ingredientName": "salt",
+                "amount": 1,
+                "unit": "/2 teaspoon"
+            },
+            {
+                "ingredientName": "very ripe banana",
+                "amount": 3,
+                "unit": "whole"
+            },
+            {
+                "ingredientName": "plain plant-based yogurt",
+                "amount": 1,
+                "unit": "/4 cup"
+            },
+            {
+                "ingredientName": "large",
+                "amount": 2,
+                "unit": "whole"
+            },
+            {
+                "ingredientName": "vegitable oil",
+                "amount": 1,
+                "unit": "/4 cup"
+            },
+            {
+                "ingredientName": "vanilla extract",
+                "amount": 5,
+                "unit": "/2 teaspoon"
+            }
+        ],
+        "addIns": [
+            {
+                "ingredientName": "blueberries",
+                "amount": 1,
+                "unit": "cup"
+            }
+        ],
+        "tools": [
+            {
+                "tool": "Loaf Pan"
+            }
+        ],
+        "instructions": ""
     }
 ]
