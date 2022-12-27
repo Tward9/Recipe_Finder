@@ -66,6 +66,23 @@
                 "tool": "Loaf Pan"
             }
         ],
-        "instructions": ""
+        "instructions": [
+            {
+                "instruction": "Preheat the oven to 350°F. Line a 9-inch loaf pan with parchment paper (overhanging on the two long sides) then grease the parchment paper with cooking spray."
+            },
+            {
+                "instruction": "In a large bowl, whisk together the flour, sugar, brown sugar, baking soda and salt."
+            },
+            {
+                "instruction": "In a separate medium bowl, whisk together the mashed bananas, eggs, plant based yogurt, vegetable oil and vanilla extract. Add the wet ingredients to the dry ingredients and stir until combined. Stir in the bluberries then scrape the batter into the prepared loaf pan."
+            },
+            {
+                "instruction": "Bake the bread for 50 to 60 minutes, until a toothpick inserted comes out clean."
+            },
+            {
+                "instruction": "Remove the bread from the oven and allow it to cool completely in the pan before using the parchment paper overhangs to lift the bread out of the pan to slice and serve."
+            }
+        ],
+        "recipeRating": 4
     }
 ]
