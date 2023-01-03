@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Auth from "../../../utils/auth";
+import Auth from "../../utils/auth";
 
 const LoginForm = (props) => {
     const [formState, setFormState] = useState({ email: "", password: "" });
