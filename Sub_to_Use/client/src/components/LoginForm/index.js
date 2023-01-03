@@ -4,7 +4,9 @@ import Auth from "../../utils/auth";
 const LoginForm = (props) => {
     const [formState, setFormState] = useState({ email: "", password: "" });
     // eslint-disable-next-line
-    const [login, { error, data }] = useMutation(LOGIN_USER);
+    // const [login, { error, data }] = useMutation(LOGIN_USER);
+    
+    //need to set function to call api to login
 
     // update state based on form input changes
     const handleChange = (event) => {
