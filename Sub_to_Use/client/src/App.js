@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import IngredientEntry from './pages/Ingredients';
 import RecipeList from './pages/RecipeList';
 import SuppliesList from './pages/Supplies';
+import Login from './pages/Login';
 
 //components
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/ingredients' element={<IngredientEntry ingredientFormData={ingredientFormData} setIngredientFormData={setIngredientFormData} checkedSupplies={checkedSupplies} />} />
           <Route path='/recipeList' element={<RecipeList />} />
           <Route path='/supplies' element={<SuppliesList checkedSupplies={checkedSupplies} setCheckedSupplies={setCheckedSupplies} ingredientFormData={ingredientFormData} />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
       </div>
     </Router>
